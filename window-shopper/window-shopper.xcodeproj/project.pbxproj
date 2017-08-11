@@ -12,6 +12,7 @@
 		A1AA50471F3DD5860098D588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AA50451F3DD5860098D588 /* Main.storyboard */; };
 		A1AA50491F3DD5860098D588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1AA50481F3DD5860098D588 /* Assets.xcassets */; };
 		A1AA504C1F3DD5860098D588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AA504A1F3DD5860098D588 /* LaunchScreen.storyboard */; };
+		A1B976061F3DDB670051ABBD /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B976051F3DDB670051ABBD /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A1AA50481F3DD5860098D588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1AA504B1F3DD5860098D588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1AA504D1F3DD5860098D588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B976051F3DDB670051ABBD /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		A1AA50401F3DD5860098D588 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				A1B976041F3DDB400051ABBD /* Views */,
 				A1AA50531F3DD7820098D588 /* Controller */,
 				A1AA50411F3DD5860098D588 /* AppDelegate.swift */,
 				A1AA50451F3DD5860098D588 /* Main.storyboard */,
@@ -70,6 +73,14 @@
 				A1AA50431F3DD5860098D588 /* MainVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A1B976041F3DDB400051ABBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1B976051F3DDB670051ABBD /* CurrencyTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B976061F3DDB670051ABBD /* CurrencyTxtField.swift in Sources */,
 				A1AA50441F3DD5860098D588 /* MainVC.swift in Sources */,
 				A1AA50421F3DD5860098D588 /* AppDelegate.swift in Sources */,
 			);
