@@ -43,27 +43,49 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Hourly Wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYm-2d-FaB" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
-                                <rect key="frame" x="78" y="219" width="218" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Hourly Wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYm-2d-FaB" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="210" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Gz7-sk-FMz"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfI-Cf-3Qu" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="275" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hq2-9X-unB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GxL-o9-pKa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Er-p7-aK4"/>
                             <constraint firstItem="GxL-o9-pKa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IV0-Aj-6cK"/>
+                            <constraint firstItem="nfI-Cf-3Qu" firstAttribute="height" secondItem="AYm-2d-FaB" secondAttribute="height" id="Lg7-4c-8fg"/>
                             <constraint firstItem="S7w-eI-gFM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Udg-0z-UsR"/>
                             <constraint firstItem="WMs-w2-Xbc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YbS-Tx-xlt"/>
+                            <constraint firstItem="AYm-2d-FaB" firstAttribute="top" secondItem="S7w-eI-gFM" secondAttribute="bottom" constant="35" id="bf0-Oe-D5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AYm-2d-FaB" secondAttribute="trailing" constant="20" id="fF1-9S-BvK"/>
                             <constraint firstItem="GxL-o9-pKa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gYw-uS-A4U"/>
+                            <constraint firstItem="AYm-2d-FaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hN3-eg-V0M"/>
                             <constraint firstItem="WMs-w2-Xbc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="izn-GQ-TEd"/>
+                            <constraint firstItem="nfI-Cf-3Qu" firstAttribute="top" secondItem="AYm-2d-FaB" secondAttribute="bottom" constant="25" id="lF3-RN-3lk"/>
                             <constraint firstItem="GxL-o9-pKa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="m7z-X4-moU"/>
                             <constraint firstItem="S7w-eI-gFM" firstAttribute="top" secondItem="WMs-w2-Xbc" secondAttribute="bottom" constant="20" id="ttH-Ch-76z"/>
+                            <constraint firstItem="nfI-Cf-3Qu" firstAttribute="leading" secondItem="AYm-2d-FaB" secondAttribute="leading" id="urE-cp-jMm"/>
+                            <constraint firstItem="nfI-Cf-3Qu" firstAttribute="trailing" secondItem="AYm-2d-FaB" secondAttribute="trailing" id="uvi-NJ-QKd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="nfI-Cf-3Qu" id="g0Y-cS-fVF"/>
+                        <outlet property="wageTxt" destination="AYm-2d-FaB" id="tS1-k6-cBJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
